@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Randomized Enigma Codebook</title>
-    <div id="enigma-table" class="center"></div>
+    <pre id="codebook-table" class="center"></pre>
     
     <script>
         function getRandomItem(array) {
@@ -59,7 +59,7 @@
                 table += "+----+---------------------+----------------+-------------------------------+\n";
             }
 
-            document.getElementById("enigma-table").textContent = table;
+            document.getElementById("codebook-table").textContent = table;
         }
 
         generateEnigmaCodebook();

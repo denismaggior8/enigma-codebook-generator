@@ -1,7 +1,10 @@
 .center {
-    width: 200px;
-    height: 100px;
+    width: 700px;
     margin: auto;
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
+}
+
+#codebook-table {
+    font: 0.7em courier-new, monospace;
 }
