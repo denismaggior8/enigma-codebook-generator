@@ -1,0 +1,7 @@
+.center {
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+}
