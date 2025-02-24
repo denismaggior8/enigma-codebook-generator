@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style type="text/css">
+        body {
+            font-family: monospace;
+            background-color: #f0f0f0;
+        }
+
+
+        #header {
+            margin-top: 20px;
+            text-align: center; 
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .center {
+            width: 670px;
+            margin: auto;
+            position: absolute;
+            top: 0; bottom: 0; left: 0; right: 0;
+        }
+        
+        #codebook-table {
+            margin-top: 45px;
+            font: 0.7em courier-new, monospace;
+        }
+
+        #footer {
+            margin-top: 895px;
+            text-align: center; 
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Enigma codebook generator by Denis Maggiorotto</title>
+    <div id="header" class="center">Enigma codebook generator by Denis Maggiorotto</div>
     <pre id="codebook-table" class="center"></pre>
+    <div id="footer" class="center">Source code at <a href="https://github.com/denismaggior8/enigma-codebook-generator">https://github.com/denismaggior8/enigma-codebook-generator</a></div>
     
     <script>
         function getRandomItem(array) {
