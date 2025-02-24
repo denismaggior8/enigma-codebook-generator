@@ -26,6 +26,16 @@
             return pairs.join(" ");
         }
 
+        function generateRandomIndicatorGroups() {
+            let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+            shuffleArray(letters);
+            let pairs = [];
+            for (let i = 0; i < 4; i++) {
+                pairs.push(letters[i * 2] + letters[i * 2 + 1] + letters[i * 2 + 2] );
+            }
+            return pairs.join(" ");
+        }
+
         function generateEnigmaCodebook() {
             const days = Array.from({ length: 31 }, (_, i) => (31 - i).toString().padStart(2, "0")); // 31 to 01
 
@@ -33,9 +43,9 @@
             let table = "";
 
             // Header (Plugboard Header Enlarged by 4 Spaces)
-            table += "+----+---------------------+----------------+-------------------------------+\n";
-            table += "|Day |       Rotors        |    Ring Set    |     Plugboard Connections     |\n";
-            table += "+----+---------------------+----------------+-------------------------------+\n";
+            table += "+----+---------------------+----------------+-------------------------------+---------------------+\n";
+            table += "|Day |       Rotors        |    Ring Set    |     Plugboard Connections     |   Indicator groups  |\n";
+            table += "+----+---------------------+----------------+-------------------------------+---------------------+\n";
 
             for (let i = 0; i < 31; i++) {
                 let day = days[i];
@@ -52,11 +62,14 @@
                     Math.floor(Math.random() * 26 + 1).toString().padStart(2, "0")
                 ].join("  ");
 
+                // Randomized indicator groups 
+                let indicatorGroups = generateRandomIndicatorGroups();
+
                 // Randomized Plugboard
                 let plugboard = generateRandomPlugboard();
 
-                table += `| ${day} | ${rotors} | ${ringSettings} | ${plugboard} |\n`;
-                table += "+----+---------------------+----------------+-------------------------------+\n";
+                table += `| ${day} | ${rotors} | ${ringSettings} | ${plugboard} |   ${indicatorGroups}   | \n`;
+                table += "+----+---------------------+----------------+-------------------------------+---------------------+\n";
             }
 
             document.getElementById("codebook-table").textContent = table;
