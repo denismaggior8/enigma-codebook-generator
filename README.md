@@ -1,8 +1,12 @@
 # Enigma codebook generator
 
+## About codebooks 
+
 An Enigma codebook was a secret document used by the German military during World War II to set up the Enigma machine for encrypted communication. It contained daily settings for the machine. 
 
 Each day, operators would configure their Enigma machine according to the codebook, ensuring secure communication (ref: https://www.ciphermachinesandcryptology.com/en/enigmaproc.htm).
+
+## The codebook generator
 
 This repo contains a Single Page Application (literally, a single index.html file) used to randomly generate a codebook for an entire month.
 
@@ -30,4 +34,4 @@ By opening that URL in a browser, you get something similar to:
 ```
 
 > [!NOTE]  
-> Each time you refresh the page you get a new codebook with no-way to recover the previous one (the app does not maintain a state of previous generations)... unless you saved it locally or printed it.
+> Each time you refresh the page you get a new codebook with no-way to recover the previous one (as the app does not maintain a state of previous generations)... unless you saved it locally or printed it.
