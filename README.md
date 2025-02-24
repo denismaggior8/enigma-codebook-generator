@@ -6,7 +6,7 @@ Each day, operators would configure their Enigma machine according to the codebo
 
 This repo contains a Single Page Application (literally, a single index.html file) used to randomly generate a codebook for an entire month.
 
-Other than within this repo, the page is publicly availe here https://denismaggior8.github.io/enigma-codebook-generator. 
+Other than within this repo, the page is publicly available here https://denismaggior8.github.io/enigma-codebook-generator. 
 
 By opening that URL in a browser, you get something similar to:
 
