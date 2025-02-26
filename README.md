@@ -35,3 +35,9 @@ By opening that URL in a browser, you get something similar to:
 
 > [!NOTE]  
 > Each time you refresh the page you get a new codebook with no-way to recover the previous one (as the app does not maintain a state of previous generations)... unless you saved it locally or printed it.
+
+## Supporting
+
+Found it useful/funny/educational? Please consider to:
+
+ [![Buy Me a Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/denismaggior8)
