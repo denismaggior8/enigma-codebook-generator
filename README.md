@@ -38,6 +38,4 @@ By opening that URL in a browser, you get something similar to:
 
 ## Supporting
 
-Found it useful/funny/educational? Please consider to:
-
- [![Buy Me a Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/denismaggior8)
+Found it useful/funny/educational? Please consider to [![Buy Me a Coffee](https://img.shields.io/badge/buy_me_a_coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/denismaggior8)
